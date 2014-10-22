@@ -1,0 +1,38 @@
+.button{
+	padding-top: $padding - 5px;
+	padding-right: $padding;
+	padding-bottom: $padding - 5px;
+	padding-left: $padding;
+	background:$primary-blue;
+	border-color:$primary-blue;
+	color:white;
+	font-weight:bold;
+	text-transform:uppercase;
+	border:2px solid $primary-blue;
+	-webkit-appearance:none;
+	letter-spacing:3px;
+	@include vendor-prefix(border-radius,3px);
+	@include vendor-prefix(transform,translateY(0px));
+
+	&:hover{
+		color:white;
+		cursor:pointer;
+		background:none;
+		color:$primary-blue;
+	}
+
+	&:focus{
+		outline:0;
+	}
+
+	&:active{
+		@include vendor-prefix(transform,translateY(2px));
+	}
+
+	&[disabled]{
+		background:$primary-grey;
+		border-color:$primary-grey;
+		color:silver;
+		cursor:default;
+	}
+}

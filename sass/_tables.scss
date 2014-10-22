@@ -1,0 +1,26 @@
+table{
+width: 100%;
+max-width: 100%;
+font-size:12px;
+
+	th {
+		padding: 8px 15px;
+		border-bottom: 1px solid $primary-grey;
+		vertical-align: bottom;
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+
+	td {
+		padding: $padding;
+		border-top: 1px solid $primary-grey;
+
+	}
+
+	tr{
+				&:nth-child(2n) {
+          background-color: $primary-grey2;
+        }
+	}
+
+}

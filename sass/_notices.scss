@@ -1,0 +1,50 @@
+.notices{
+	padding:$padding;
+	margin-bottom:$margin-bottom;
+	@include vendor-prefix(border-radius,3px);
+
+	p{
+		margin-bottom:0px;
+		text-align:center;
+	}
+
+	&.notice{
+		background:$primary-yellow;
+		border:1px solid darken($primary-yellow,20%);
+
+		p{
+			color:darken($primary-yellow,30%);
+		}
+	}
+	&.success{
+		background:$primary-green;
+		border:1px solid darken($primary-green,20%);
+
+		p{
+			color:darken($primary-green,20%);
+		}
+
+	}
+	&.error{
+		background:$primary-red;
+		border:1px solid darken($primary-red,20%);
+
+		p{
+				color:darken($primary-red,20%);
+		}
+	}
+	&.no_content{
+		padding:$padding * 5;
+		background:white;
+		text-align:center;
+		font-size:30px;
+		color:$primary-grey;
+
+		.fa{
+			font-size:40px;
+			display:block;
+			margin-bottom:$margin-bottom;
+		}
+
+	}
+}

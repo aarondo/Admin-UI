@@ -1,0 +1,78 @@
+@import "compass/reset";
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "layout";
+@import "header";
+@import "main_nav";
+@import "widget";
+@import "badge";
+@import "forms"; 
+@import "buttons"; 
+@import "tables"; 
+@import "notices"; 
+
+
+
+
+
+*{
+	box-sizing:border-box
+}
+a{
+	text-decoration:none;
+}
+.clear{
+	display:block;
+	clear:both;
+}
+.last{
+  margin-right:0px!important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+ ::-webkit-scrollbar-thumb:vertical {
+  margin: 5px;
+  background-color: #999;
+  -webkit-border-radius: 5px;
+}
+ ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+  height: 5px;
+  display: block;
+}
+
+
+
+.colors{
+  li{
+    float:left;
+    width:18.4%;
+    margin-right:2%;
+    min-height:100px;
+    display:block;
+
+    @media (max-width: $screen-min) { 
+      width:100%;
+      float:none;
+      margin-right:0px;
+    }
+    margin-bottom:$margin-bottom;
+    &:nth-child(1){
+      background:$primary-orange;
+    }
+    &:nth-child(2){
+      background:$primary-blue;
+    }
+    &:nth-child(3){
+      background:$primary-grey;
+    }
+    &:nth-child(4){
+      background:$primary-dark2;
+    }
+    &:nth-child(5){
+      background:$primary-green;
+    }
+  }
+}

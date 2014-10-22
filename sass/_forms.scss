@@ -1,0 +1,50 @@
+form{
+
+	input[type="text"],input[type="email"],input[type="password"],input[type="url"],textarea{
+		padding:$padding;
+		border:1px solid $primary-grey;
+		max-width:100%;
+		min-width:100%;
+		width:100%;
+		@include vendor-prefix(border-radius,3px);
+
+		&:focus{
+			outline:0;
+			border:1px solid $primary-blue;
+			box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+		}
+
+	}
+
+	div{
+		margin-bottom:$margin-bottom /2;
+
+		label{
+			display:block;
+			font-size:12px;
+			text-transform:uppercase;
+			margin-bottom:5px;
+			color:$primary-blue;
+			font-weight:bold;
+		}
+
+	}
+
+	textarea{
+		min-height:100px;
+	}
+
+	input[type="checkbox"]{
+
+	}
+
+	legend{
+		width:100%;
+		margin-bottom: $margin-bottom;
+		font-size: 22px;
+		border-bottom: 1px solid $primary-grey;
+		padding-bottom: $padding;
+	}
+
+}	
+
